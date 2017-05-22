@@ -68,7 +68,6 @@ executable yesod-auth-oauth2-example
   build-depends:       base
                      , containers
                      , http-conduit
-                     , load-env
                      , text
                      , warp
                      , yesod
@@ -80,6 +79,7 @@ test-suite test
   main-is:           Spec.hs
   hs-source-dirs:    test
   ghc-options:       -Wall
+  other-modules:   Yesod.Auth.OAuth2Spec
   build-depends:   base
                  , yesod-auth-oauth2
                  , hspec
